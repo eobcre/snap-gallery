@@ -1,4 +1,8 @@
+import { useState } from 'react';
+import { imgData } from '../imgData';
+
 const Images = () => {
+  const [category, setCategory] = useState('all');
   return (
     <div>
       <div className='dropdown'>
