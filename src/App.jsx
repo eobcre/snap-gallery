@@ -1,20 +1,14 @@
+import Images from './components/Images';
 import { imgData } from './imgData';
 
 const App = () => {
   return (
     <>
-      <h1># Snap Gallery</h1>
-      <div className='img-container'>
-        {imgData.map(({ src }, index) => (
-          <img
-            key={src}
-            src={src}
-            alt={`Image ${index}`}
-            width='320'
-            height='240'
-          />
-        ))}
-      </div>
+      <h1>
+        <span className='title-color1'>#</span>
+        <span className='title-color2'>Snap Gallery</span>
+      </h1>
+      <Images images={imgData} />
     </>
   );
 };
