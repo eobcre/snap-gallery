@@ -28,14 +28,19 @@ h1 .title-color1 {
 }
 
 .dropdown-title {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 select {
   border: none;
+  outline: none;
   background-color: #006d77;
   color: white;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
   padding: 4px;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 140px;
 }
