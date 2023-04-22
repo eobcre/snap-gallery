@@ -3,10 +3,27 @@ import { imgData } from '../imgData';
 
 const Images = () => {
   const [category, setCategory] = useState('all');
+
+  const filterImages = imgData.filter((image) => {
+    if (category === 'all') {
+      return true;
+    } else {
+      return image.category === category;
+    }
+  });
+
+  const handleChange = (e) => {
+    setCategory(e.target.value);
+  };
+
   return (
-    <div>
+    <>
       <div className='dropdown'>
-        <label htmlFor='category' className='dropdown-title'>
+        <label
+          htmlFor='category'
+          className='dropdown-title'
+          onChange={handleChange}
+        >
           Select the location
         </label>
         <select>
@@ -15,7 +32,18 @@ const Images = () => {
           <option value='category2'>Los Angeles</option>
         </select>
       </div>
-    </div>
+      <div className='img-container'>
+        {filterImages.map(({ src }, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={`Image ${index}`}
+            width='320'
+            height='240'
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
