@@ -7,35 +7,35 @@
 }
 
 body {
-  background-color: #e8cf68;
+  background-color: #ffd166;
 }
 
 h1 {
   text-align: center;
-  padding: 50px;
   font-family: 'Poppins', sans-serif;
+  padding: 50px;
 }
 
-.img-container {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-  gap: 40px;
+h1 .title-color1 {
+  color: #006d77;
+  margin-right: 8px;
 }
 
-@media screen and (min-width: 768px) {
-  .img-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
+.dropdown {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 50px;
 }
 
-@media screen and (min-width: 1024px) {
-  .img-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
-  }
+.dropdown-title {
+  margin-right: 10px;
+}
+
+select {
+  border: none;
+  background-color: #006d77;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 4px;
+  cursor: pointer;
 }
