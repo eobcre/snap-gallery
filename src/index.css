@@ -26,8 +26,8 @@ select {
   outline: none;
   background-color: #006d77;
   color: white;
+  text-align-last: center;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
   padding: 4px;
   cursor: pointer;
   appearance: none;
