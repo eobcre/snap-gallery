@@ -35,6 +35,13 @@ select {
   width: 140px;
 }
 
+footer {
+  position: sticky;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px;
+}
+
 .dropdown {
   text-align: center;
   font-family: 'Poppins', sans-serif;
