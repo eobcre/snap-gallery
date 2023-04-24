@@ -19,9 +19,6 @@ const Images = () => {
   return (
     <>
       <div className='dropdown'>
-        <label htmlFor='category' className='dropdown-title'>
-          Select the location
-        </label>
         <select value={category} onChange={handleChange}>
           <option value='all'>Show all</option>
           <option value='category1'>Hawaii</option>
